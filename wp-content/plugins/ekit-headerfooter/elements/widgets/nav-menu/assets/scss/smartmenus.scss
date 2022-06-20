@@ -1,0 +1,22 @@
+/* Mobile first layout SmartMenus Core CSS (it's not recommended editing these rules)
+   You need this once per page no matter how many menu trees or different themes you use.
+-------------------------------------------------------------------------------------------*/
+
+@import 'variable/variable';
+
+.ekit-menu{box-sizing:border-box;position:relative;z-index:9999;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.ekit-menu,.ekit-menu ul,.ekit-menu li{display:block;list-style:none;margin:0;padding:0;line-height:normal;direction:ltr;text-align:left;}
+.ekit-menu-rtl,.ekit-menu-rtl ul,.ekit-menu-rtl li{direction:rtl;text-align:right;}
+.ekit-menu>li>h1,.ekit-menu>li>h2,.ekit-menu>li>h3,.ekit-menu>li>h4,.ekit-menu>li>h5,.ekit-menu>li>h6{margin:0;padding:0;}
+.ekit-menu ul{display:none;}
+.ekit-menu li,.ekit-menu a{position:relative;}
+.ekit-menu a{display:block;}
+.ekit-menu a.disabled{cursor:default;}
+.ekit-menu::after{content:"";display:block;height:0;font:0px/0 serif;clear:both;overflow:hidden;}
+.ekit-menu *,.ekit-menu *::before,.ekit-menu *::after{box-sizing:inherit;}
+
+
+@import 'components/_ekit-menu-sub-items-indentation.scss';
+
+// the variables + the CSS
+@import 'components/_ekit-menu-simple-theme.scss';

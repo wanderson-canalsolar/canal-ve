@@ -1,0 +1,1 @@
+<img class="ekit-template-preview-img">
